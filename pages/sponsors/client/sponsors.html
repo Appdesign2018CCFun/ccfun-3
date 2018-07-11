@@ -1,54 +1,22 @@
 <template name="sponsors">
 
-	<h1>We wish we had these sponsors!</h1>
-	<table class="table table-bordered">
-		<thead>
-			<tr>
-				<td>Company</td>
-				<td>Amount</td>
-				<td>Date</td>
-			</tr>
-		</thead>
-		<tbody>
-			{{#each s in sponsorData}}
-				<tr>
-					<td><a href="http://www.{{s.name}}.com">{{s.name}}</a></td>
-					<td>{{s.amt}}</td>
-					<td>{{s.date}}</td>
-				</tr>
-			{{/each}}
-		</tbody>
-	</table>
+	<h1>Categories</h1>
+
+
+
+	<div id="categories" style= "height:200px;width:100px;float:left;">
+		<b>MOST RECENT</b><hr>
+		<b>MOST COMMENT</b><hr>
+		<b>MOST RELEVANT</b><hr>
+		<b>MOST VIEWED</b>
+
+	</div>
 
 
 	<hr>
-	<ol>
-	{{#each stuff in randomStuff}}
-		<li>{{stuff}}</li>
-	{{/each}}
-</ol>
 
 
 
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th>English</th>
-      <th>Spanish</th>
-      <th>Japanese</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>One</td><td>Uno</td><td>Ichi</td>
-    </tr>
-    <tr>
-      <td>Two</td><td>Dos</td><td>Ni</td>
-    </tr>
-    <tr>
-      <td>Three</td><td>Tres</td><td>San</td>
-    </tr>
-  </tbody>
-</table>
+
 
 </template>
