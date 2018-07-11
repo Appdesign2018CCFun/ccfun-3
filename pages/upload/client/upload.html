@@ -1,0 +1,28 @@
+<template name="upload">
+  <div>
+  Video Title:<input type="text" id="js-title" value="{{video.title}}"><br>
+  </div>
+  <div>
+  Video Cover:<br>
+  Path:<input type="text" id="js-cpath" value="{{video.cpath}}"><br>
+  </div>
+  <div>
+  Video:<br>
+  Path:<input type="text" id="js-vpath" value="{{video.vpath}}"><br>
+  </div>
+  <div>
+  Description:<input type="text" id="js-ds" value="{{video.ds}}"><br>
+  </div>
+  <div>
+  Video Quality:
+  <select id="js-Qt">
+    <option>4k</option>
+    <option>1080p</option>
+    <option>720p</option>
+    <option>480p</option>
+    <option>360p</option>
+    <option>188p</option>
+  </select>
+    <button id="js-upload" class="btn btn-info">Upload</button>
+  </div>
+</template>
