@@ -5,8 +5,6 @@ const team =
     {name:"Jiaqi Shao", email:"hzshaojiaqi@163.com"},
     {name:"Jiyang Chen", email:"cjykuwabara@gmail.com"},
     {name:"土拨鼠"，email:"土拨鼠的email"}
-    {name:"Jiyang Chen", email:"??"},
-    {name:"土拨鼠",email:"土拨鼠的email"}
   ];
 
 Template.about.helpers(
