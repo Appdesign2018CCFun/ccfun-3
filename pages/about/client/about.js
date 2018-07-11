@@ -4,7 +4,7 @@ const team =
     {name:"Liangzhe Zhao", email:"zhaoliangzhe@gmail.com"},
     {name:"Jiaqi Shao", email:"hzshaojiaqi@163.com"},
     {name:"Jiyang Chen", email:"cjykuwabara@gmail.com"},
-    {name:"Jingyou Ma"，email:"james078020@gmail.com"}
+    {name:"Jingyou Ma",email:"james078020@gmail.com"}
 
 
   ];
