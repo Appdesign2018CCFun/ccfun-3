@@ -17,9 +17,10 @@ Template.fbinfo.events({
   "click #js-submit"(event,instance){
     const name = instance.$('#js-name').val();
     console.log('just read '+name);
-    const bday = instance.$('js-bday').val();
+    const bday = instance.$('#js-bday').val();
     console.log('just read'+bday);
     this.user.name = name;
+    this.user.bday = bday;
     Profiles.update(this.user._id,this.user);
   }
 })
