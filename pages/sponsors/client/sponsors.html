@@ -1,6 +1,34 @@
 <template name="sponsors">
 
+	<div id="categories" style= "height:200px;width:200px;float:left;">
+	  	<b><a href="{{pathFor 'favorite'}}">favorite</a></b><hr>
+	    <b><a href="{{pathFor 'history'}}">history</a></b><hr>
+	    <b><a href="{{pathFor 'uploaded'}}">uploaded</a></b><hr>
+	    <b><a href="{{pathFor 'fpinfo'}}">account profile</a></b>
 
+	</div>
+	<h1>CC Fun Profile</h1>
+	<center>
+		<div id="contents" style= "height:500px;width:1000px;float:">
+
+			  Your Full Name:
+			    <input type="text" id="js-name" value="{{user.name}}">
+			    <br>
+				Your Birthday:
+			    <input type="date" id="js-bday" value= "{{user.bday}}">
+			    <br>
+			    Your gender:
+			    <select id= 'js-gender'>
+			      <option>male</option>
+			      <option>female</option>
+			      <option>other</option>
+			    </select>
+			    <br>
+			    let everyone see my profile
+			    <input type="checkbox" id="js-public" value="{{user.public}}">
+			    <button id="js-submit" class="btn btn-info">Update Profile</button>
+		</div>
+</center>
 <div id='tags' style="height:100px;width:1100px;float:center;margin-bottom:20px;">
 	<b>Tags: Movies Anime Music Gaming Others</b>
 		<hr>
@@ -43,9 +71,5 @@
 
 
 	<hr>
-
-
-
-
 
 </template>
