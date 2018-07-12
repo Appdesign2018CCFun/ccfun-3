@@ -1,6 +1,9 @@
 <template name="layout">
 	<div class="container">
 
+<link rel="stylesheet" type="text/css" href="layout.css">
+
+
 		<!-- Here is the standard Bootstrap code for a Navigation bar taken directly from getbootstrap.com/components -->
 		<nav class="navbar navbar-default">
 		  <div class="container-fluid">
@@ -34,7 +37,7 @@
 							<li><a href="{{pathFor 'fbprofile'}}">Profile</a></li>
 
 							<li><a href="{{pathFor'loginpage' }}">loginpage</a></li>
-							<li style="margin-top:100"><input type="text" id = "key"></li>
+							<li class="Searchcss" ><input type="text" id = "key"></li>
 								<li><a href="{{pathFor 'search'}}"><img src="images/search.png" width = "20" alt="search"></a> </li>
 						</ul>
 			    <ul class="nav navbar-nav navbar-right">
