@@ -1,5 +1,5 @@
 *{
-    margin:10;
+    margin:0;
     padding:0;
     box-sizing: border-box;
     text-align: justify;
@@ -12,5 +12,18 @@
   margin-top:13px;
 
 
-
 }
+
+.navtop{
+  width:100%;
+  overflow: visible;
+  position:fixed;
+  right:0;
+  z-index: 1000;
+}
+
+.spacer{
+  padding-bottom: 100px;
+}
+
+.CCFun
