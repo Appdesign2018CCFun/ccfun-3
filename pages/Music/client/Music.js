@@ -1,4 +1,4 @@
-Template.draw.events({
+Template.Music.events({
 
 	"click .js-start": function(event){
 		running = true;
