@@ -1,18 +1,49 @@
 <template name="upload">
+<<<<<<< HEAD
+
+  <link rel="stylesheet" type="text/css" href="layout.css">
+
+  <div class= "Upload">
+    <div>
+    <h3>Video Title:</h3><input type="text" id="js-title" value="{{video.title}}"><br>
+    </div>
+    <div>
+    <h3>Video Cover:</h3><br>
+    Path:<input type="text" id="js-cpath" value="{{video.cpath}}"><br>
+    </div>
+    <div>
+    <h3>Video:</h3><br>
+    Path:<input type="text" id="js-vpath" value="{{video.vpath}}"><br>
+    </div>
+    <div>
+    <h3>Description:</h3><input type="text" id="js-ds" value="{{video.ds}}"><br>
+    </div>
+    <div>
+    <h3>Video Quality:</h3>
+    <select id="js-qt">
+      <option>4k</option>
+      <option>1080p</option>
+      <option>720p</option>
+      <option>480p</option>
+      <option>360p</option>
+      <option>188p</option>
+    </select>
+      <button id="js-upload" class="btn btn-info">Upload</button>
+    </div>
+=======
+<div >
+  <h3  >Video Title:</h3> <input type="text" id="js-title" value="{{video.title}}">
+  </div><br>
   <div>
-  <h3>Video Title:</h3><input type="text" id="js-title" value="{{video.title}}"><br>
-  </div>
+  <h3>Video Cover:</h3> <input type="text" id="js-cpath" value="{{video.cpath}}">
+  </div><br>
   <div>
-  <h3>Video Cover:</h3><br>
-  Path:<input type="text" id="js-cpath" value="{{video.cpath}}"><br>
-  </div>
+  <h3>Video:</h3>
+  <input type="text" id="js-vpath" value="{{video.vpath}}">
+  </div><br>
   <div>
-  <h3>Video:</h3><br>
-  Path:<input type="text" id="js-vpath" value="{{video.vpath}}"><br>
-  </div>
-  <div>
-  <h3>Description:</h3><input type="text" id="js-ds" value="{{video.ds}}"><br>
-  </div>
+  <h3>Description:</h3><input type="text" id="js-ds" value="{{video.ds}}">
+  </div><br>
   <div>
   <h3>Video Quality:</h3>
   <select id="js-qt">
@@ -24,5 +55,6 @@
     <option>188p</option>
   </select>
     <button id="js-upload" class="btn btn-info">Upload</button>
+>>>>>>> aac9e0e553c9fd1aca03a95866449a904a550837
   </div>
 </template>
