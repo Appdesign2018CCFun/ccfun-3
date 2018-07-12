@@ -1,6 +1,6 @@
 <template name="fbprofile">
   <center>
-  <h1>Ccfun Profile</h1>
+  <h1>CC Fun Profile</h1>
   {{#if currentUser}}
     {{> fbinfo user=user}}
   {{else}}
@@ -37,8 +37,8 @@
 
     <b><a href="{{pathFor 'favorite'}}">favorite</a></b><hr>
     <b><a href="{{pathFor 'history'}}">history</a></b><hr>
-    <b><a href="{{pathFor 'uploaded'}}">uploaded</a> us</b><hr>
-    <b><a href="{{pathFor 'fpinfo'}}">account profile</a></b>
+    <b><a href="{{pathFor 'uploaded'}}">uploaded</a></b><hr>
+    <b><a href="{{pathFor 'fbprofile'}}">account profile</a></b>
   </div>
 
 </template>
