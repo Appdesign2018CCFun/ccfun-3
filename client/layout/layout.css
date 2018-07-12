@@ -3,10 +3,9 @@
     padding:0;
     box-sizing: border-box;
     text-align: justify;
-
-
-
 }
+
+.CCFUN{}
 
 .Searchcss{
   margin-top:13px;
@@ -20,11 +19,11 @@
   position:fixed;
   right:0;
   z-index: 1000;
-  background-color: #000000;
+  background-color: #48ea17;
 }
 
 .spacer{
-  padding-bottom: 100px;
+  padding-bottom: ;
 }
 
 
@@ -32,4 +31,33 @@
 
   right:0;
   float:right;
+  position: relative;
+}
+
+ul {
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #444444;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.navbar-collapse) {
+    background-color: #41f2ce;
+}
+
+.active {
+    background-color: #4CAF50;
 }
