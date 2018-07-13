@@ -4,20 +4,20 @@
   <link rel="stylesheet" type="text/css" href="layout.css">
 
   <div class= "Upload">
-
-<div >
-  <h3  >Video Title:</h3> <input type="text" id="js-title" value="{{video.title}}">
-  </div><br>
   <div>
+  <h3>Video Title:</h3> <input type="text" id="js-title" value="{{video.title}}">
+  </div>
+<hr>
+ <div>
   <h3>Video Cover:</h3> <input type="text" id="js-cpath" value="{{video.cpath}}">
-  </div><br>
+</div><hr>
   <div>
   <h3>Video:</h3>
   <input type="text" id="js-vpath" value="{{video.vpath}}">
-  </div><br>
+</div><hr>
   <div>
   <h3>Description:</h3><input type="text" id="js-ds" value="{{video.ds}}">
-  </div><br>
+</div><hr>
   <div>
   <h3>Video Quality:</h3>
   <select id="js-qt">
@@ -29,6 +29,6 @@
     <option>188p</option>
   </select>
     <button id="js-upload" class="btn btn-info">Upload</button>
-
-  </div></div>
+</div>
+  </div>
 </template>
