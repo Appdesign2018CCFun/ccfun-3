@@ -6,17 +6,23 @@
   <div class= "Upload" style= "height:200px;width:200px;float:left;margin-top:60px">
 
   <div>
-  <h3>Video Title:</h3> <input type="text" id="js-title" value="{{video.title}}">
+  <h3>Video Title:</h3>
+  <input type="file" id="browsefile3" style="visibility:reveal" onchange="filepath.value=this.value">
+
+  <input type="textfield" id="filepath3">
   </div>
 <hr>
  <div>
-  <h3>Video Cover:</h3> <input type="text" id="js-cpath" value="{{video.cpath}}">
+  <h3>Video Cover:</h3>
+  <input type="file" id="browsefile2" style="visibility:reveal" onchange="filepath.value=this.value" >
+
+  <input type="textfield" id="filepath2">
 </div><hr>
   <div>
   <h3>Video:</h3>
-<input type="file" id="browsefile" style="visibility:hidden" onchange="filepath.value=this.value">
-<input type="button" id="filebutton" value="" onclick="browsefile.click()">
-<input type="textfield" id="filepath">
+<input type="file" id="browsefile1" style="visibility:reveal" onchange="filepath.value=this.value">
+
+<input type="textfield" id="filepath1">
 </div><hr>
   <div>
   <h3>Description:</h3><input type="text" id="js-ds" value="{{video.ds}}">
