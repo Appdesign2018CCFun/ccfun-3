@@ -1,4 +1,4 @@
-<template name="dplayer">
+<template name="free">
   <style>
    .black_overlay{
        display: none;
@@ -31,17 +31,17 @@
 
 <video id="my-video" src="/videos/bigcards.mp4" width=800 controls></video>
 <br>
-<input type="text" id="js-comment" width="1000%" class="bg-info">
+<input type="text" id="js-comment" width="100%" class="bg-info">
 <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
   <img src="images/setting.png" width = "20" alt="setting">
 </a>
 <div id="light" class="white_content">
   Fronts: <button id="js-small" class="btn btn-info">small</button> <button id="js-medium" class="btn btn-info">medium</button> <button id="js-large" class="btn btn-info">large</button><br>
-  Color:  <button id="js-white" class="btn btn-info">white</button> <button id="js-black" class="btn btn-info">black</button> <button id="js-red" class="btn btn-info">red</button>
-          <button id="js-orange" class="btn btn-info">orange</button><button id="js-yellow" class="btn btn-info">yellow</button><button id="js-green" class="btn btn-info">green</button>
-          <button id="js-blue" class="btn btn-info">blue</button><button id="js-purple" class="btn btn-info">purple</button><br>
+  Color:  <button id="js-small" class="btn btn-info">white</button> <button id="js-medium" class="btn btn-info">black</button> <button id="js-large" class="btn btn-info">red</button>
+          <button id="js-large" class="btn btn-info">orange</button><button id="js-large" class="btn btn-info">yellow</button><button id="js-large" class="btn btn-info">green</button>
+          <button id="js-large" class="btn btn-info">blue</button><button id="js-large" class="btn btn-info">purple</button><br>
 
-<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">set</a></div>
+<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">点这里关闭本窗口</a></div>
       <div id="fade" class="black_overlay"></div>
 
 </template>
