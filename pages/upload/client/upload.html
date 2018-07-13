@@ -6,9 +6,6 @@
   <div class= "Upload" style= "height:200px;width:200px;float:left;margin-top:60px">
 
   <div>
-  <h3  >Video Title:</h3> <input type="text" id="js-title" value="{{video.title}}">
-  </div><br>
-  <div>
   <h3>Video Title:</h3> <input type="text" id="js-title" value="{{video.title}}">
   </div>
 <hr>
@@ -17,7 +14,9 @@
 </div><hr>
   <div>
   <h3>Video:</h3>
-  <input type="text" id="js-vpath" value="{{video.vpath}}">
+<input type="file" id="browsefile" style="visibility:hidden" onchange="filepath.value=this.value">
+<input type="button" id="filebutton" value="" onclick="browsefile.click()">
+<input type="textfield" id="filepath">
 </div><hr>
   <div>
   <h3>Description:</h3><input type="text" id="js-ds" value="{{video.ds}}">

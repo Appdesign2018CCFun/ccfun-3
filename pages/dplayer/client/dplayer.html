@@ -1,7 +1,47 @@
 <template name="dplayer">
+  <style>
+   .black_overlay{
+       display: none;
+       position: absolute;
+       top: 0%;
+       left: 0%;
+       width: 100%;
+       height: 100%;
+       background-color: black;
+       z-index:1001;
+       -moz-opacity: 0.8;
+       opacity:.80;
+       filter: alpha(opacity=88);
+   }
+   .white_content {
+       display: none;
+       position: absolute;
+       top: 25%;
+       left: 25%;
+       width: 55%;
+       height: 55%;
+       padding: 20px;
+       border: 10px solid orange;
+       background-color: white;
+       z-index:1002;
+       overflow: auto;
+   }
+</style>
 <h1>DanMaku</h1>
 
 <video id="my-video" src="/videos/bigcards.mp4" width=800 controls></video>
 <br>
-<input type="text" id="js-comment" width="100%" class="bg-info"><br>
+<input type="text" id="js-comment" width="100%" class="bg-info">
+<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
+  <img src="images/setting.png" width = "20" alt="setting">
+</a>
+<div id="light" class="white_content">
+  Fronts: <button id="js-small" class="btn btn-info">small</button> <button id="js-medium" class="btn btn-info">medium</button> <button id="js-large" class="btn btn-info">large</button><br>
+  Color:  <button id="js-small" class="btn btn-info">white</button> <button id="js-medium" class="btn btn-info">black</button> <button id="js-large" class="btn btn-info">red</button>
+          <button id="js-large" class="btn btn-info">orange</button><button id="js-large" class="btn btn-info">yellow</button><button id="js-large" class="btn btn-info">green</button>
+          <button id="js-large" class="btn btn-info">blue</button><button id="js-large" class="btn btn-info">purple</button><br>
+  
+<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">点这里关闭本窗口</a></div>
+      <div id="fade" class="black_overlay"></div>
+
 </template>
