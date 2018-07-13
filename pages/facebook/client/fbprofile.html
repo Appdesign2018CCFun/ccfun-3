@@ -23,16 +23,16 @@
     Birthday:
     <input type="date" id="js-bday" value= "{{user.bday}}">
     <br>
-    Your gender:
+    Your gender is:
     <select id= 'js-gender'>
-      <option>male</option>
-      <option>female</option>
-      <option>other</option>
+      <option {{isSelected user.gender "male"}} value= "male">male</option>
+      <option {{isSelected user.gender "female"}} value= "female">female</option>
+      <option {{isSelected user.gender "other"}} value= "other">other</option>
     </select>
     <br>
     Your Country:
-    <select>
-      <option label="Afghanistan" value="AF">Afghanistan</option>
+    <select id= 'js-country'>
+      <option {{isSelectedcountry user.country "Afghanistan"}} label="Afghanistan" value="AF">Afghanistan</option>
       <option label="Anguilla" value="AI">Anguilla</option>
       <option label="Armenia" value="AM">Armenia</option>
       <option label="Aruba" value="AW">Aruba</option>
@@ -219,7 +219,7 @@
       <option label="Ukraine" value="UA">Ukraine</option>
       <option label="United Arab Emirates" value="AE">United Arab Emirates</option>
       <option label="United Kingdom" value="GB" >United Kingdom</option>
-      <option label="United States of America" value="US" selected="selected">United States of America</option>
+      <option label="United States of America" value="US">United States of America</option>
       <option label="Uruguay" value="UY">Uruguay</option>
       <option label="Uzbekistan" value="UZ">Uzbekistan</option>
       <option label="Vanuatu" value="VU">Vanuatu</option>
