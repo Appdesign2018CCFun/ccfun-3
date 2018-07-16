@@ -19,18 +19,12 @@ Template.fbinfo.helpers({
     } else {
       return ""
     }
-  }
+  },
+
+
 })
 
-Template.fbinfo.helpers({
-  isSelectedcountry(a,b){
-    if (a==b){
-      return "selected"
-    } else {
-      return ""
-    }
-  }
-})
+
 
 
 Template.fbinfo.events({
