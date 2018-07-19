@@ -16,20 +16,33 @@
 <template name="fbinfo">
 
   <div id="categories" style= "height:10px;width:1750px;float:right;margin-top:20px">
-  <center>
+
+<div>
     Your Full Name:
     <input type="text" id="js-name" value="{{user.name}}">
+  </div>
+
     <br>
+
+<div>
     Birthday:
     <input type="date" id="js-bday" value= "{{user.bday}}">
+</div>
+
     <br>
+
+<div>
     Your gender is:
     <select id= 'js-gender'>
       <option {{isSelected user.gender "male"}} value= "male">male</option>
       <option {{isSelected user.gender "female"}} value= "female">female</option>
       <option {{isSelected user.gender "other"}} value= "other">other</option>
     </select>
+</div>
+
     <br>
+
+<div>
     Your Country:
     <select id= 'js-country'>
       <option {{isSelected user.country "Afghanistan"}} label="Afghanistan" >Afghanistan</option>
@@ -532,15 +545,22 @@
       <option {{isSelected user.country "Zaire"}} label="Zaire" value="ZR">Zaire</option>
       <option {{isSelected user.country "Zambia"}} label="Zambia" value="ZM">Zambia</option>
       <option {{isSelected user.country "Zimbabwe"}} label="Zimbabwe" value="ZW">Zimbabwe</option>
-
-
 </select>
+</div>
+
 <br>
+
+<div>
     let everyone see my profile
     <input type="checkbox" id="js-public" value="{{user.public}}">
+</div>
+
     <br>
+
+<div>
     <button id="js-submit" class="btn btn-info">Update Profile</button>
-  </center>
+</div>
+
   </div>
 
   <div id="categories" style= "height:200px;width:200px;float:left;margin-top:20px">
